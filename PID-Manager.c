@@ -7,6 +7,7 @@
 #define MIN_PID 100
 #define MAX_PID 1000
 #define SIZE MAX_PID-MIN_PID
+// Declare our Bitmap
 int bit_map[SIZE];
 
 int allocate_map() {

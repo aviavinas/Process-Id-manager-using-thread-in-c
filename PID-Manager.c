@@ -28,7 +28,7 @@ int allocate_pid() {
 }
 void release_pid(int pid) {
     if(MIN_PID<=pid<MAX_PID) {
-      bit_map[pid] = 0;
+      bit_map[pid-MIN_PID] = 0;
       printf("Process Released with PID : %d \n",pid);
     }
 }

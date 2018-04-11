@@ -45,7 +45,7 @@ int main() {
     allocate_map();
     pthread_t tid;
     printf("Let's start creating Thread...\n");
-    for (i = 0; i < 100; i++) { // Creating 100 Threads
+    for (i = 0; i < 100; i++) { // Creating 100 Threads for testing
       pthread_create(&tid, NULL, myThreadFun, NULL);
     }
     exit(0);
